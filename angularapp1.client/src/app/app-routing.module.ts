@@ -5,6 +5,7 @@ import { SignInComponent } from './sign-in/sign-in.component';
 
 import { CategoryComponent } from './category/category.component';
 import { ProductsComponent } from './products/products.component';
+import {SingleProductComponent } from './single-product/single-product.component'
 
 
 const routes: Routes = [
@@ -12,7 +13,8 @@ const routes: Routes = [
   { path: 'sign-in', component: SignInComponent },
 
   { path: "CategoryPage", component: CategoryComponent },
-  { path: "ProductsPage", component: ProductsComponent }
+  { path: "ProductsPage/:id", component: ProductsComponent },
+  { path: "SinglePageProduct/:id", component: SingleProductComponent }
 ];
 
 

@@ -12,6 +12,8 @@ import { SignInComponent } from './sign-in/sign-in.component';
 import { RouterModule, Routes } from '@angular/router';
 import { CategoryComponent } from './category/category.component';
 import { ProductsComponent } from './products/products.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { SingleProductComponent } from './single-product/single-product.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent }
@@ -19,6 +21,7 @@ const appRoutes: Routes = [
 
 @NgModule({
   declarations: [
+
     AppComponent,
     FirstComponentComponent,
     HomeComponent,
@@ -26,7 +29,9 @@ const appRoutes: Routes = [
     NavbarComponent,
     SignInComponent,
     CategoryComponent,
-    ProductsComponent
+    ProductsComponent,
+    SignUpComponent,
+    SingleProductComponent
   ],
   imports: [
     BrowserModule, HttpClientModule,

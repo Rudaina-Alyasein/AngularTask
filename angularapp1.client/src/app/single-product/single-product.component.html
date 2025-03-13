@@ -1,11 +1,10 @@
-
 <div style="display:flex; flex-direction:row; gap:10px; margin-top:20px;">
-  <div *ngFor="let Product of filteredProducts" class="card" style="width: 18rem;  ">
+  <div *ngFor="let Product of singleProduct" class="card" style="width: 18rem;  ">
 
     <div class="card-body">
       <h5 class="card-title">{{Product.name}}</h5>
       <p class="card-text">Smart phones with high specification</p>
-      <a routerLink="/SinglePageProduct/{{Product.id}}" class="card-link">SeeDetails</a>
+      <a routerLink="" class="card-link">Shop now</a>
     </div>
   </div>
 

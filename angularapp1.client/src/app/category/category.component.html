@@ -1,18 +1,11 @@
 
-<div style="display:flex; flex-direction:row; gap:10px; margin-top:20px;">
-  <div class="card" style="width: 18rem;  ">
+<div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px;">
+  <div *ngFor="let category of Categories" class="card" style="width: 18rem;">
     <div class="card-body">
-      <h5 class="card-title">Smart Phone</h5>
-      <p class="card-text">Smart phones with high specification</p>
-      <a routerLink="/ProductsPage" class="card-link">See details </a>
+      <h5 class="card-title">{{ category.name }}</h5>
+      <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      <a routerLink="/ProductsPage/{{category.id}}" class="card-link">See details</a>
     </div>
   </div>
-  <div class="card" style="width: 18rem;  ">
-    <div class="card-body">
-      <h5 class="card-title">Laptops</h5>
-      <p class="card-text">Smart Laptops with high specification</p>
-      <a routerLink="/ProductsPage" class="card-link">See details </a>
-    </div>
-  </div>
-
 </div>
+
