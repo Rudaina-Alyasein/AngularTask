@@ -19,7 +19,7 @@ export class CategoryComponent {
   }
   Categories: any
   get() {
-    this._service.getData().subscribe(data => this.Categories = data);
+    this._service.getData().subscribe(data => this.Categories = data);// data is defined inside this scope just 
   }
 
   }
