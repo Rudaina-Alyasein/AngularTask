@@ -3,24 +3,23 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 
-@Injectable 
+@Injectable
   ({
-  providedIn: 'root'
-})
+    providedIn: 'root'
+  })
 export class APIURLService {
 
-  constructor(private _url: HttpClient) 
-  { }
-  getData(): Observable<any>{
-      return this._url.get<any>("https://67cd64b6dd7651e464ee3d63.mockapi.io/categories");
+  constructor(private _url: HttpClient) { }
+  getData(): Observable<any> {
+    return this._url.get<any>("https://67cd64b6dd7651e464ee3d63.mockapi.io/categories");
   }
   getProducts() {
     return this._url.get<any>("https://67cd64b6dd7651e464ee3d63.mockapi.io/products");
   }
 
 
-  addUser(data : any) {
-    return this._url.post<any>("https://67cea6ee125cd5af757b6514.mockapi.io/Users" , data);
+  addUser(data: any) {
+    return this._url.post<any>("https://67cea6ee125cd5af757b6514.mockapi.io/Users", data);
   }
   getUser() {
     return this._url.get("https://67cea6ee125cd5af757b6514.mockapi.io/Users");
@@ -30,5 +29,14 @@ export class APIURLService {
   }
   addProduct(data: any) {
     return this._url.post<any>("https://67cd64b6dd7651e464ee3d63.mockapi.io/products", data);
+  }
+  EditCategory(data: any) {
+    return this._url.put("https://67cd64b6dd7651e464ee3d63.mockapi.io/categories/" + data.id, data);
+  }
+  EditProduct(data: any) {
+    return this._url.put("https://67cd64b6dd7651e464ee3d63.mockapi.io/products/" + data.id, data);
+  }
+  getCategoryById(ProductId: any) {
+    return this._url.get(`https://67cd64b6dd7651e464ee3d63.mockapi.io/products/${ProductId}`);
   }
 }

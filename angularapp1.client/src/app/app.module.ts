@@ -23,6 +23,8 @@ import { CategoryManagementComponent } from './Admin/category-management/categor
 import { DashboardComponent } from './Dashboard/dashboard.component';
 import { ProductManagementComponent } from './Admin/product-management/product-management.component';
 import { ProductsPage1Component } from './products-page1/products-page1.component';
+import { EditCategoryComponent } from './edit-category/edit-category.component';
+import { EditProductComponent } from './edit-product/edit-product.component';
 
 
 const appRoutes: Routes = [
@@ -47,7 +49,7 @@ const appRoutes: Routes = [
     ParentComponentComponent,
     ChildComponentComponent,
     AddProductComponent,
-    CategoryManagementComponent,DashboardComponent, ProductManagementComponent, ProductsPage1Component
+    CategoryManagementComponent,DashboardComponent, ProductManagementComponent, ProductsPage1Component, EditCategoryComponent, EditProductComponent
    
   ],
   imports: [

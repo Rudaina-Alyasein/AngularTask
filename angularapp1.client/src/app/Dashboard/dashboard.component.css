@@ -1,7 +1,6 @@
-/* تصميم الـ Sidebar */
 .sidebar {
-  height: 100vh;
-  background-color: #343a40;
+  height: 400vh;
+  background-color: #BE5985 !important;
   padding-top: 20px;
 }
 
@@ -18,7 +17,6 @@
       border-radius: 5px;
     }
 
-/* تصميم الكروت */
 .card-custom {
   background: linear-gradient(to right, #007bff, #6610f2);
   color: white;

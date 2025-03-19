@@ -1,0 +1,18 @@
+<div class="container mt-4">
+  <h2>Edit Category</h2>
+  <form #categoryForm="ngForm" (ngSubmit)="updateCategory(categoryForm.value)">
+    <div class="form-group">
+      <label for="categoryName">Category Name</label>
+      <input type="text" id="categoryName" class="form-control" name="name" [(ngModel)]="filteredCategory.name" required />
+    </div>
+    <div class="form-group">
+      <label for="categoryImage">Category Image URL</label>
+      <input type="text" id="categoryImage" class="form-control" name="img" [(ngModel)]="filteredCategory.img" required />
+    </div>
+    <div class="form-group">
+      <label for="categoryId">Category ID</label>
+      <input type="text" id="categoryId" class="form-control" name="id" [(ngModel)]="filteredCategory.id" required readonly />
+    </div>
+    <button type="submit" class="btn btn-primary">Update Category</button>
+  </form>
+</div>

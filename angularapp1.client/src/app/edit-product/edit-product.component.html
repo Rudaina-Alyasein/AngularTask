@@ -1,0 +1,24 @@
+<!-- edit-product.component.html -->
+<div class="container">
+  <h2>Edit Product</h2>
+  <form #productForm="ngForm" (ngSubmit)="updateProduct(productForm.value)">
+    <div class="form-group">
+      <label for="productName">Product Name</label>
+      <input type="text" id="productName" class="form-control" name="name" ngModel [(ngModel)]="ProductData.name" required />
+    </div>
+
+    <div class="form-group">
+      <label for="categoryName">Category Name</label>
+      <select class="form-control" name="categoryId"  ngModel  [(ngModel)]="ProductData.categoryId"required>
+        <option *ngFor="let category of CategoryData" [value]="category.id">{{ category.name }}</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="productImage">Category Image URL</label>
+      <input type="text" id="productImage" class="form-control" name="img" ngModel  [(ngModel)]="ProductData.img"required />
+    </div>
+
+    <button type="submit" class="btn btn-primary" style="margin-top:15px">Save Changes</button>
+  </form>
+</div>

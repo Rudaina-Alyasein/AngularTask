@@ -13,6 +13,8 @@ import { DashboardComponent } from './Dashboard/dashboard.component';
 import { CategoryManagementComponent } from './Admin/category-management/category-management.component';
 import { ProductManagementComponent } from './Admin/product-management/product-management.component';
 import { ProductsPage1Component } from './products-page1/products-page1.component';
+import { EditCategoryComponent } from './edit-category/edit-category.component';
+import { EditProductComponent } from './edit-product/edit-product.component';
 
 
 const routes: Routes = [
@@ -32,7 +34,8 @@ const routes: Routes = [
       {
         path: "ProductsPage1/:id", component:ProductsPage1Component
 
-      }
+      }, { path: "EditCategory/:id", component: EditCategoryComponent },
+      { path: "EditProduct/:id", component: EditProductComponent },
     ]
   }
 

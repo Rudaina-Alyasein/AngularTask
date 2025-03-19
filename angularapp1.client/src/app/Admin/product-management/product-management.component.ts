@@ -10,6 +10,8 @@ import { APIURLService } from '../../services/API.service';
 export class ProductManagementComponent {
   CategoryData: any
   ProductData: any
+ 
+
   constructor(private _ser: APIURLService) {
 
   }
@@ -32,6 +34,10 @@ export class ProductManagementComponent {
     this._ser.addProduct(data).subscribe(()=>{
       alert("the product added successfuly");
     });
+  }
+  updateProduct(data: any) {
+
+
   }
 
 }

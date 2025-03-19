@@ -1,9 +1,7 @@
-<!-- زر لفتح المودال -->
 <a class="btn btn-primary" style="margin:20px auto" data-bs-toggle="modal" data-bs-target="#categoryModal">
   Add Category
 </a>
 
-<!-- المودال -->
 <div class="modal fade" id="categoryModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -46,6 +44,8 @@
       <td>
         <div style="display: flex; gap: 10px;">
           <a class="btn btn-primary" [routerLink]="['/Dashboard/ProductsPage1', item.id]">See details</a>
+          <a class="btn btn-primary" [routerLink]="['/Dashboard/EditCategory', item.id]">Edit</a>
+
 
 
         </div>

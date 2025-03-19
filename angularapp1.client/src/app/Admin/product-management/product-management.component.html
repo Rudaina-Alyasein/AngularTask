@@ -50,7 +50,8 @@
       <td>{{ product.name }}</td>
       <td>
         <div style="display: flex; gap: 10px;">
-          <a class="btn btn-primary" [routerLink]="['/Dashboard/ProductsPage1', product.id]">See details</a>
+          <a class="btn btn-primary" [routerLink]="['/Dashboard/EditProduct', product.id]">Edit</a>
+
 
 
         </div>
@@ -58,3 +59,4 @@
     </tr>
   </tbody>
 </table>
+
