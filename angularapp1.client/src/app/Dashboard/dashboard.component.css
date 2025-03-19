@@ -1,0 +1,39 @@
+/* تصميم الـ Sidebar */
+.sidebar {
+  height: 100vh;
+  background-color: #343a40;
+  padding-top: 20px;
+}
+
+  .sidebar .nav-link {
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+    .sidebar .nav-link:hover,
+    .sidebar .nav-link.active {
+      background-color: #495057;
+      color: #f8f9fa;
+      border-radius: 5px;
+    }
+
+/* تصميم الكروت */
+.card-custom {
+  background: linear-gradient(to right, #007bff, #6610f2);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+  .card-custom .card-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .card-custom .card-text {
+    font-size: 14px;
+  }

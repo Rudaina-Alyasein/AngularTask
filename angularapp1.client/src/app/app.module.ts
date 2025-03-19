@@ -15,6 +15,15 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { SingleProductComponent } from './single-product/single-product.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { FormsModule } from '@angular/forms';
+import { AddCategoryComponent } from './add-category/add-category.component';
+import { ParentComponentComponent } from './parent-component/parent-component.component';
+import { ChildComponentComponent } from './child-component/child-component.component';
+import { AddProductComponent } from './add-product/add-product.component';
+import { CategoryManagementComponent } from './Admin/category-management/category-management.component';
+import { DashboardComponent } from './Dashboard/dashboard.component';
+import { ProductManagementComponent } from './Admin/product-management/product-management.component';
+import { ProductsPage1Component } from './products-page1/products-page1.component';
+
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent }
@@ -34,12 +43,18 @@ const appRoutes: Routes = [
     SignUpComponent,
     SingleProductComponent,
     RegistrationComponent,
+    AddCategoryComponent,
+    ParentComponentComponent,
+    ChildComponentComponent,
+    AddProductComponent,
+    CategoryManagementComponent,DashboardComponent, ProductManagementComponent, ProductsPage1Component
+   
   ],
   imports: [
     BrowserModule, HttpClientModule,
     FormsModule, 
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes) // إضافة التوجيه
+    RouterModule.forRoot(appRoutes) 
 
   ],
   providers: [],

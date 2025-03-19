@@ -10,8 +10,9 @@ import { APIURLService } from '../services/API.service';
 })
 
 export class CategoryComponent {
-  constructor(private _service: APIURLService)//inject service to component
-  {
+
+
+  constructor(private _service: APIURLService) {
 
   }
   ngOnInit() {
@@ -19,11 +20,11 @@ export class CategoryComponent {
   }
   Categories: any
   get() {
-    this._service.getData().subscribe(data => this.Categories = data);// data is defined inside this scope just 
+    this._service.getData().subscribe(data => this.Categories = data);
   }
 
-  }
 
+}
 
 
 

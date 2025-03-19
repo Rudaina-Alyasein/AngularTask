@@ -1,0 +1,26 @@
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col-md-3 col-lg-2 d-md-block bg-dark sidebar" style="background: #75b798!important">
+      <div class="position-sticky pt-3">
+        <h4 class="text-light text-center mb-4">Admin Panel</h4>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link " routerLink="CategoryManagement">
+              <i class="fas fa-tachometer-alt"></i> CategoryManagement
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="ProductManagement">
+              <i class="fas fa-chart-bar"></i> ProductManagement
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+    </nav>
+
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+      <router-outlet></router-outlet>
+    </main>
+  </div>
+</div>
