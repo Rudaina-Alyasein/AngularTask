@@ -21,8 +21,10 @@ export class SignInComponent {
     this._ser.getUser().subscribe((data: any) => {
       console.log(data[0].password); 
 
-      let user = data.find((p: any) => p.Email == UserLogged.email && p.password == UserLogged.password);
+      let user = data.find((p: any) => p.Email == UserLogged.Email && p.password == UserLogged.password);
       if (user) {
+        // تخزين بيانات المستخدم في localStorage
+        localStorage.setItem('loggedUser', JSON.stringify(user));
         alert('LogIn Successfully');
         this._route.navigate(['/']); 
       } else {

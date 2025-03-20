@@ -25,6 +25,8 @@ import { ProductManagementComponent } from './Admin/product-management/product-m
 import { ProductsPage1Component } from './products-page1/products-page1.component';
 import { EditCategoryComponent } from './edit-category/edit-category.component';
 import { EditProductComponent } from './edit-product/edit-product.component';
+import { ProfileComponent } from './profile/profile.component';
+import { EditProfileComponent } from './edit-profile/edit-profile.component';
 
 
 const appRoutes: Routes = [
@@ -49,7 +51,7 @@ const appRoutes: Routes = [
     ParentComponentComponent,
     ChildComponentComponent,
     AddProductComponent,
-    CategoryManagementComponent,DashboardComponent, ProductManagementComponent, ProductsPage1Component, EditCategoryComponent, EditProductComponent
+    CategoryManagementComponent,DashboardComponent, ProductManagementComponent, ProductsPage1Component, EditCategoryComponent, EditProductComponent, ProfileComponent, EditProfileComponent
    
   ],
   imports: [

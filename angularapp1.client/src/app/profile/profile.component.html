@@ -1,0 +1,28 @@
+<div class="container mt-4 mb-4 p-3 d-flex justify-content-center">
+  <div class="card p-4 shadow-sm" style="max-width: 400px;">
+    <div class="image d-flex flex-column justify-content-center align-items-center text-center">
+      <div style="border-radius: 50%; border: solid 1px black; ">
+        <img src="{{User.avatar}}" height="100" width="100" class="rounded-circle" />
+      </div>
+      <span class="name mt-3 fs-5 fw-bold">{{User.name}}</span>
+      <span class="idd">{{User.Email}}</span>
+
+      <div class="d-flex flex-row justify-content-center align-items-center gap-2 mt-2">
+        <span class="idd1">Password: {{User.password}}</span>
+      </div>
+
+      <div class="d-flex flex-row justify-content-center align-items-center mt-3">
+        <span class="idd1">Age: {{User.age}}</span>
+      </div>
+
+      <div class="d-flex justify-content-center mt-4">
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editProfileModal">
+          Edit Profile
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<app-edit-profile [User]="User" (userUpdated)="updateUser($event)"></app-edit-profile>

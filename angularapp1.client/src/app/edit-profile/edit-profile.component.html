@@ -1,0 +1,43 @@
+<div class="modal fade" id="editProfileModal" tabindex="-1" aria-labelledby="editProfileModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title" id="editProfileModalLabel">Edit Profile</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <form>
+
+          <div class="form-group">
+            <label for="nameInput">Name</label>
+            <input type="text" id="nameInput" class="form-control" name="name" [(ngModel)]="User.name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="emailInput">Email</label>
+            <input type="email" id="emailInput" class="form-control" name="email" [(ngModel)]="User.Email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="ageInput">Age</label>
+            <input type="text" id="ageInput" class="form-control" name="age" [(ngModel)]="User.age" required />
+          </div>
+
+          <div class="form-group">
+            <label for="passwordInput">Password</label>
+            <input type="password" id="passwordInput" class="form-control" name="password" [(ngModel)]="User.password" required />
+          </div>
+          <div class="form-group">
+            <label for="avatarInput">Upload New Avatar</label>
+            <input type="file" id="avatarInput" class="form-control" (change)="onImageChange($event)" />
+          </div>
+
+          <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" style="background: #BE5985; border:none; margin:20px auto" (click)="saveChanges()">Save Changes</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>

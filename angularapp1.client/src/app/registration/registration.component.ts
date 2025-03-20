@@ -21,7 +21,8 @@ export class RegistrationComponent {
   ngOnInit() { }
 
 
-  onSubmitData(data:any) {
+  onSubmitData(data: any) {
+    console.log(data);
     this._ser.addUser(data).subscribe(() => {
       alert(
       "the registration done successfuly!")

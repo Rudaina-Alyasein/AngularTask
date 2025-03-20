@@ -24,8 +24,11 @@ export class CategoryManagementComponent {
 
   }
   saveCategory(data: any) {
+    console.log(data);
     this._ser.addCategory(data).subscribe(() => {
+   
       alert(
+        
         "the adding done successfuly!")
     })
 

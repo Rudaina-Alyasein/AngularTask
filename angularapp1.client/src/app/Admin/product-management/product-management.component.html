@@ -1,4 +1,4 @@
-<a class="btn btn-primary" style="margin :20px auto" data-bs-toggle="modal" data-bs-target="#productModal">Add product</a>
+<a class="btn btn-primary" style="margin: 20px auto; background: #BE5985; border: none;" data-bs-toggle="modal" data-bs-target="#productModal">Add product</a>
 
 <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -50,7 +50,7 @@
       <td>{{ product.name }}</td>
       <td>
         <div style="display: flex; gap: 10px;">
-          <a class="btn btn-primary" [routerLink]="['/Dashboard/EditProduct', product.id]">Edit</a>
+          <a class="btn btn-primary"  style="background: #BE5985; border: none;"[routerLink]="['/Dashboard/EditProduct', product.id]">Edit</a>
 
 
 

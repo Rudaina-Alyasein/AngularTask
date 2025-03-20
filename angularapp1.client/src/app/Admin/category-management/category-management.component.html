@@ -1,4 +1,4 @@
-<a class="btn btn-primary" style="margin:20px auto" data-bs-toggle="modal" data-bs-target="#categoryModal">
+<a class="btn btn-primary" style="margin: 20px auto; background: #BE5985; border: none;" data-bs-toggle="modal" data-bs-target="#categoryModal" >
   Add Category
 </a>
 
@@ -19,11 +19,8 @@
             <label for="categoryImage">Category Image URL</label>
             <input type="text" id="categoryImage" class="form-control" name="img" ngModel required />
           </div>
-          <div class="form-group">
-            <label for="categoryId">Category ID</label>
-            <input type="text" id="categoryId" class="form-control" name="id" ngModel required />
-          </div>
-          <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Save Category</button>
+          
+          <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" style="background: #BE5985; border:none;">Save Category</button>
         </form>
       </div>
     </div>
@@ -43,8 +40,10 @@
       <td>{{ item.name }}</td>
       <td>
         <div style="display: flex; gap: 10px;">
-          <a class="btn btn-primary" [routerLink]="['/Dashboard/ProductsPage1', item.id]">See details</a>
-          <a class="btn btn-primary" [routerLink]="['/Dashboard/EditCategory', item.id]">Edit</a>
+          <a class="btn btn-primary" style="background: #BE5985; border: none;" [routerLink]="['/Dashboard/ProductsPage1', item.id]">See details</a>
+          <a class="btn btn-primary" style="background: #BE5985; border: none;" [routerLink]="['/Dashboard/EditCategory', item.id]">Edit</a>
+          
+
 
 
 
